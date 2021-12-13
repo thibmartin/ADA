@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/thibmartin/ADA/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<h1 align="center"> DataShot </h1>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<h2 align="center"> Public perspective on gun ownership and violence in relation to gun shooting events over time.</h2>
 
-### Markdown
+![image_title](/../main/images/title_image.png)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Introduction :
 
-```markdown
-Syntax highlighted code block
+#### Abstract:
 
-# Header 1
-## Header 2
-### Header 3
+Gun ownership and regulation is a very divisive topic in the United States. It is clear that the country faces a problem with **gun violence**, this is reflected by the **yearly 14 000 deaths following gun related homicides** (statistic for 2019). However, people&#39;s opinions over how this problem should be tackled differ greatly.
 
-- Bulleted
-- List
+In the case of our project, we basically want to know :
 
-1. Numbered
-2. List
+&quot;Who is thinking what and when?&quot;.
 
-**Bold** and _Italic_ and `Code` text
+This includes, political **shifts in opinion**, the differing impacts of shooting event types in the public eye, and the **temporal evolution** of public opinions.
 
-[Link](url) and ![Image](src)
-```
+We wish to include an external dataset containing shooting events information and cross-reference with the QuoteBank dataset to see how given events influence what is said publicly, and how much these events take over the press.
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+#### Research questions:
 
-### Jekyll Themes
+How do general opinions in the media shift following gun shooting events?
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/thibmartin/ADA/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+How does the political sphere, and the opinion of significant public figures, evolve in relation to gun shootings?
 
-### Support or Contact
+#### Methods:
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+In our Data story, we want to use the Quotebank dataset to anylyze a **potential shift in opinion around gun shootings events in the United States**. In order to do so we will select relevant quotes for our topic using a set of keywords. Then we will first analyze the obtain dataset, and perform sentimental analysis on it. Finally we will compare the results with a gun shooting dataset obtained from (https://www.gunviolencearchive.org/). We will try to highlight the shifts in sentimental score around relevant selected events from this dataset.
