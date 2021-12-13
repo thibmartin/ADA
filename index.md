@@ -3,7 +3,7 @@
 
 <h2 align="center"> Public perspective on gun ownership and violence in relation to gun shooting events over time.</h2>
 
-![image_title](/../main/images/title_image.png)
+![image_title](../main/images/title_image.png)
 
 ### Introduction :
 
