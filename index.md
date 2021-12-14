@@ -27,13 +27,27 @@ How does the political sphere, and the opinion of significant public figures, ev
 
 #### Methods:
 
-The first step of the project is to import the Quotebank dataset as well as the gun violence related dataset into  2 separate DataFrame for further analysis. The quotes will have to be filtered over a set of key-words that relate to gun violence, such as: gun, 2nd amendment, shooting, … .  We will also have to filter out incomplete and meaningless quotes – this could be done by removing quotes shorter than a certain word count threshold. For the gun violence dataset, we will select a subset of events and create different categories for these events (officer related, mass shooting, accidents).
+The first step of the project was to import the Quotebank dataset as well as the gun violence related dataset into  2 separate DataFrame for further analysis. The quotes have been filtered over a set of key-words that relate to gun violence, see below the list of keywords and their distribution across dataset.  We also have filtered out incomplete and meaningless quotes, by removing quotes shorter than a certain word count threshold. For the gun violence dataset, we selected a subset of events and create different categories for these events (officer related, mass shooting, accidents).
 
-We will need to identify whether the person quoted is sharing a positive or negative opinion with respect to gun ownership. Sentimental analysis will be applied to quotes to see whether they are pro 2nd amendment/ in favour of gun ownership, or against. There already exist numerous sentiment classification algorithms online which could be imported and used for the purpose of the project. One idea could be to use a natural language processing (NLP) model like BERT in combination with PCA to obtain a two dimensional output. Quotes than cannot be easily classified will be eliminated (for example, if we use an algorithm which outputs a positivity score ranging from 0 to 1, we could filter out all quotes with scores between 0.4 and 0.6).
+We will needed to identify whether the person quoted is sharing a positive or negative opinion with respect to gun ownership. Sentimental analysis was applied to quotes to see whether they are pro 2nd amendment/ in favour of gun ownership, or against. There already exist numerous sentiment classification algorithms online which are available and we need to select the best ones for the purpose of the project. We settled on *insert method here*. Finally we classified the quotes in 3 categories: positive, neutral or negative, based on their score *insert classifier decision here*.
 
-Our aim is for each data entry from Quote Bank to be reduced to: speaker, date and sentimental score.
+Our aim was for each data entry from Quote Bank to be reduced to: speaker, date and sentimental score.
 
-We will use the date category to cross-reference the shooting events with the relevant quotations within a given timeframe. This means, choosing quotes within a certain window of a shooting event.
+Here you can see the top 10 most present keywords throughout our dataset.
+![keywords_repartitions](/images/keywords_graph.png)
+
+#### Skeleton of development
+
+The next step was to compare the time occurences of peak in quotations number to the events timeline. On the next graph you can observe the nummber of quotes related to gun events on the same timeline as the number of deaths in gun shootings event. The idea behind this comparaison is that events involving high number of deaths have more impact.
+
+![image_title](/images/timeline_basic.png)
+
+*insert comments and analysis here*
+
+Now it's time for the biggest part of our analysis: the sentiment analysis. *add method used and maybe fonctionment?* Add graphs of scores, etc...
+
+
+*The following was on our milestone 2, not sure what to do about it*
 
 We can plot the sentimental score of all quotes against time and observe the evolution of opinion. We can also add labels on the time axis for dates corresponding to significant shooting events (high death toll for example).
 
