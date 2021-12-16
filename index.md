@@ -27,18 +27,27 @@ How does the political sphere, and the opinion of significant public figures, ev
 
 #### Methods:
 
-The first step of the project was to import the Quotebank dataset as well as the gun violence related dataset into  2 separate DataFrame for further analysis. The quotes have been filtered over a set of key-words that relate to gun violence, see below the list of keywords and their distribution across dataset.  We also have filtered out incomplete and meaningless quotes, by removing quotes shorter than a certain word count threshold. For the gun violence dataset, we selected a subset of events and create different categories for these events (officer related, mass shooting, accidents).
+The first step of the project was to import the Quotebank dataset as well as the gun violence related dataset into  2 separate DataFrame for further analysis. The quotes have been filtered over a set of key-words that relate to gun violence, see below the list of keywords and their distribution across dataset.  We also have filtered out incomplete and meaningless quotes, by removing quotes shorter than a certain word count threshold. For the gun violence dataset, we selected a subset of events based on the number of deaths and injured. *How?*
 
-We will needed to identify whether the person quoted is sharing a positive or negative opinion with respect to gun ownership. Sentimental analysis was applied to quotes to see whether they are pro 2nd amendment/ in favour of gun ownership, or against. There already exist numerous sentiment classification algorithms online which are available and we need to select the best ones for the purpose of the project. We settled on *insert method here*. Finally we classified the quotes in 3 categories: positive, neutral or negative, based on their score *insert classifier decision here*.
+We needed to identify whether the person quoted is sharing a positive or negative opinion with respect to gun ownership. Sentimental analysis was applied to quotes to see whether they are pro 2nd amendment/ in favour of gun ownership, or against. There already exist numerous sentiment classification algorithms online which are available and we need to select the best ones for the purpose of the project. We settled on *insert method here*. Finally we classified the quotes in 3 categories: positive, neutral or negative, based on their score *insert classifier decision here*. Later on, we decided to apply emotion analysis to observe the evolution of different emotions around gun shootings events.
 
-Our aim was for each data entry from Quote Bank to be reduced to: speaker, date and sentimental score.
+This website will present our work and our final analysis, for more informations or to see the source code, refer to the github repository (link on top of this article).
 
+#### Dataset filtering
+*needs complementary infos on lorenzo's work*
+
+We started our work by filtering the Quotebank dataset with a set of keywords. We manually selected relevant terms generated from the Empath library, and applied these keywords to the complete dataset. We then searched for character encoding errors but didn't find anything too problematic. After working on subsequent analysis, we found out that it was best to remove quotes from unknown speakers as they generated a lot of noise. We also chose to remove quotes were the only keyword found was "firearm", "assault weapon" or "handguns", as they also semmed to generate some noise. When these keywords were associated with another word however we kept them. In order to remove meaningless quotes, we also removed quotes with less than 5 words, this value was chosen arbitrarly as we expect to only keep meaningful quotes by doing so. 
 Here you can see the top 10 most present keywords throughout our dataset.
 ![keywords_repartitions](/images/keywords_graph.png)
+*Take the correct image?*
 
-#### Skeleton of development
+#### Dataset validation
 
-The next step was to compare the time occurences of peak in quotations number to the events timeline. On the next graph you can observe the nummber of quotes related to gun events on the same timeline as the number of deaths in gun shootings event. The idea behind this comparaison is that events involving high number of deaths have more impact.
+After treating the dataset, we wished to verify that there was no subtopic present in our dataframe. To do so, we performed topic detection using lda. We found that 99.9% of our quotes lie in a single topic, which confirms that our dataset doesn't contain too much noise. We plotted below the results of this analysis.
+*insert plot from justin here*
+
+#### Timewise comparison
+The next step was to compare the time occurences of peak in quotations number to the events timeline in order to get a first intuition on the potential correlation. On the next graph you can observe the nummber of quotes related to gun events on the same timeline as the number of deaths in gun shootings event. The idea behind this comparaison is that events involving high number of deaths and injured would have more impact on the number of quotations.
 
 ![image_title](/images/timeline_basic.png)
 
