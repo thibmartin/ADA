@@ -105,6 +105,8 @@ From the above plots, we can infer 3 main points. First, we see that the daily t
 
 We then tried to carry a similar analysis but this time only for the quotes assigned to a particular speaker. Despite having tested different speakers among the top ones in terms of total number of quotes we did not get satisfying results especially if compared with the case of all the quotes. We think this might have been caused by not having enough quotes in the selected time window and that significant public figure in particular politicians might express their opinion towards gun violence more seldomly than other topics (being a more politically sensitive topic in a way). A sampling bias might also affect significantly the results as politicians might express their opinion towards gun violence topics more often just after gun shooting events thus affecting the analsyis.
 
+In addition we also tried to use the 768 dimensional vector embeddings from the BERT expert model, mean aggreagate them by day and reduce them into 2 dimensions with PCA to try to see the sentiment opinion evolution of selected speakers before and after some relevant gunshot violence events but did not again arrive at satisfying results which might be caused by the exact same reasons highlighted in the previous paragraph.
+
 ###### Significant shootings
 We then ran the same analysis for the fifteen "significant" gun shooting events in the five days before and after each event. The emotion scores were averaged over a day. The results are shown below:
 
