@@ -34,7 +34,6 @@ We needed to identify whether the person quoted is sharing a positive or negativ
 This website will present our work and our final analysis, for more informations or to see the source code, refer to the github repository (link on top of this article).
 
 #### Dataset filtering
-*needs complementary infos on lorenzo's work*
 
 We started our work by filtering the Quotebank dataset with a set of keywords. We manually selected relevant terms generated from the Empath library, and applied these keywords to the complete dataset. We then searched for character encoding errors but didn't find anything too problematic. After working on subsequent analysis, we found out that it was best to remove quotes from unknown speakers as they generated a lot of noise. We also chose to remove quotes where the only keyword found was "firearm", "assault weapon" or "handguns", as they also seemed to generate some noise. When these keywords were associated with another word however we kept them. In order to remove meaningless quotes, we also removed quotes with less than 5 words, this value was chosen arbitrarly as we expect to only keep meaningful quotes by doing so. 
 Here you can see the top 10 most present keywords throughout our dataset.
