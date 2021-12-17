@@ -60,13 +60,30 @@ In general we observe that peaks in deaths from shootings events are correlated 
 
 *add method used and maybe fonctionment?* Add graphs of scores, etc...
 #### Emotion extraction 
-Fearing that sentiment score might be too restrictive, we chose to take our analysis further than a simple positive/negative split and investigate the main emotions that came up within quotes. We turned to the empath library and chose a range of emotions from the standard categories. These were: anger, aggression,  joy, pride, nervousness, suffering, fear, neglect, deception, disgust, optimism, sadness and disappointment. 
-We first ran lexicon.analyse() function on all quotes related to gun violence and plotted emotions that yielded significant results. This is shown below:
+Fearing that sentiment score might be too restrictive, we chose to take our analysis further than a simple positive/negative split and investigated the main emotions that came up within quotes. We turned to the empath library and chose a range of emotions from the standard categories. These were: anger, aggression,  joy, pride, nervousness, suffering, fear, neglect, deception, disgust, optimism, sadness and disappointment. 
 
-Insert plot here
+###### Entire dataset
+We first ran lexicon.analyse() function on all quotes related to gun violence and plotted emotions that yielded significant results. Emotions were averaged over a month to reduce the noise from variation. This is shown below:
+
+![emotion_extraction](/images/emotion_whole_data_set.png)
 
 Aggression is what appears the most. This is either because people speak agressively about gun violence or because our chosen theme is inherently violent and matches with a lot of keywords that might be considered as "aggressive". Furthermore, we notice a slight increasing trend in agression over the entire dataset. 
+We also notice that speakers regularly express fear and sadness. Funnily enough, there seems to be a big peak in those two emotions in the time frame following the 2016 presidential election. We also note optimism and finally, we notice speakers usually display little anger, disapointment and joy.  
 
+###### Significant shootings
+We then ran the same analysis for the fifteen "significant" gun shooting events in the five days before and after each event. The emotion scores were averaged over a day. The result is shown below:
+
+![emotion_extraction](/images/emotions_big_events.png)
+
+The plots have a lot of noise and there is no way of accounting for other shooting events that may have occured within that timeframe. Some seemignly "small" shootings can have big repurcussions in the media if they are filmed, or happen at the "right" time... There cold be a series of other unobserved constraints such as an election, a rally, or a mass shooting abroad, which would influence the resut of this plot so its' result must be taken with a grain of salt. 
+Nethertheless, we often notice that there is a small spike in emotions following a shooting event. This is most notable for aggression, sadness and anger.
+
+A small note, the event on the 12th of June 2016 generates an odd plot, this is not a coding error, we genuinely have not identified any quotes relating to gun violence on the five days prior to this event. It seems to be part of the numerous "blanks" that appear in 2016. 
+
+###### Significant speakers
+Finally, in the aim of understanding the opinions of significant public figures, we identified the top 10 speakers who appear the most in our dataset and plotted their individual emotion scores averaged over a day. The result is shown below:
+
+![emotion_extraction](/images/emotions_big_speakers.png)
 
 
 
