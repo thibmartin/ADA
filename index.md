@@ -122,5 +122,5 @@ Nevertheless, we identified a significant increase in the number of quotes relat
 
 We also noticed signicant figures display varying types of emotion with respect to gun violence. Alan Gottlieb, a gun activist, displayed more hope than others, while Barack Obama showed more sadness. We've also been given hints that gun violence is used as a political tool by presidential canditates, such as Bernie Sanders and Hillary Clinton. 
 <p align="center">
-  <img src="/images/barrack-obama-obama-out.gif"/>
+  <img src="images/barrack-obama-obama-out.gif"/>
 </p>
