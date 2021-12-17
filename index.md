@@ -138,9 +138,9 @@ After so many tears, blood and sweat...
 
 We observed a correlation between a shooting event and the number of quotes, but as we know, correlation doesn't imply causation. Even though we tried to reduce the noise as much as posssible, there are still too many hidden cofactors that could bias our analysis. Outside events can have a lot of impact on the number of quotes, either directly (in the case of the gun violence rally in early 2018 for example) or indirectly, because if another significant event generates a lot of quotes, we will have less focus on the gun violence topic. 
 
-Nevertheless, we identified a significant increase in the number of quotes related to gun violence, a significant shift in sentiment towards negtive values, and a spike in negative emotions (i.e. aggression, sadness and fear) following a shooting even. Furthermore, we showed that sentiment distribution quickly shifts back to the "norm" in the days following events. 
+Nevertheless, we identified a significant increase in the number of quotes related to gun violence, a significant shift in sentiment towards negative values as well as a spike in negative emotions (i.e. aggression, sadness and fear) in correspondance to relevant gunshot violence events. Furthermore, we showed that sentiment distribution seem to quickly shifts back to the "norm" in just a matter of days after the events.
 
-We also noticed signicant figures display varying types of emotion with respect to gun violence. Alan Gottlieb, a gun activist, displayed more hope than others, while Barack Obama showed more sadness. We've also been given hints that gun violence is used as a political tool by presidential canditates, such as Bernie Sanders and Hillary Clinton. 
+We were not able to get satisfying results for the sentiment evolution of only the quotes assigned to particular speakers but noticed signicant figures display varying types of emotion with respect to gun violence. Alan Gottlieb, a gun activist, displayed more hope than others, while Barack Obama showed more sadness. We've also been given hints that gun violence is used as a political tool by presidential canditates, such as Bernie Sanders and Hillary Clinton. 
 <p align="center">
   <img src="images/barrack-obama-obama-out.gif"/>
 </p>
