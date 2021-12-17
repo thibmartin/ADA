@@ -27,7 +27,7 @@ How does the political sphere, and the opinion of significant public figures, ev
 
 #### Methods:
 
-The first step of the project was to import the Quotebank dataset as well as the gun violence related dataset into  2 separate DataFrame for further analysis. The quotes have been filtered over a set of key-words that relate to gun violence, see below the list of keywords and their distribution across dataset.  We also have filtered out incomplete and meaningless quotes, by removing quotes shorter than a certain word count threshold. For the gun violence dataset, we selected a subset of events based on the number of deaths. We choose a threshold of 8 deaths by visually analyzing the graphs.
+The first step of the project was to import the Quotebank dataset as well as the gun violence related dataset into  2 separate DataFrame for further analysis. The gun violence dataset was obtained from the following [website](https://www.gunviolencearchive.org/). The quotes have been filtered over a set of key-words that relate to gun violence, see below the list of keywords and their distribution across dataset.  We also have filtered out incomplete and meaningless quotes, by removing quotes shorter than a certain word count threshold. For the gun violence dataset, we selected a subset of events based on the number of deaths. We choose a threshold of 8 deaths by visually analyzing the graphs.
 
 We needed to identify whether the person quoted is sharing a positive or negative opinion with respect to gun ownership. Sentimental analysis was applied to quotes to see wheter they display a positive or negative sentiment. Furthermore, we performed emotional analysis to see the evolution of particular emotions, namely fear, anger, sadness, agression, joy, optimism. There already exist numerous sentiment classification algorithms online which are available and we need to select the best ones for the purpose of the project. We settled on Vader and Bert. Finally we classified the quotes in 3 categories: positive, neutral or negative, based on their score *insert classifier decision here*. Later on, we decided to apply emotion analysis to observe the evolution of different emotions around gun shootings events.
 
@@ -67,7 +67,7 @@ We first ran lexicon.analyse() function on all quotes related to gun violence an
 
 ![emotion_extraction](/images/emotion_whole_data_set.png)
 
-Aggression is what appears the most. This is either because people speak agressively about gun violence or because our chosen theme is inherently violent and matches with a lot of keywords that might be considered as "aggressive". Furthermore, we notice a slight increasing trend in agression over the entire dataset. 
+Aggression is what appears the most. This is either because people speak agressively about gun violence or because our chosen theme is inherently violent and matches with a lot of keywords that might be considered as "aggressive", probably both. Furthermore, we notice a slight increasing trend in agression over the entire dataset. 
 We also notice that speakers regularly express fear and sadness. Funnily enough, there seems to be a big peak in those two emotions in the time frame following the 2016 presidential election. We also note optimism and finally, we notice speakers usually display little anger, disapointment and joy.  
 
 ###### Significant shootings
@@ -75,8 +75,8 @@ We then ran the same analysis for the fifteen "significant" gun shooting events 
 
 ![emotion_extraction](/images/emotions_big_events.png)
 
-The plots have a lot of noise and there is no way of accounting for other shooting events that may have occured within that timeframe. Some seemignly "small" shootings can have big repurcussions in the media if they are filmed, or happen at the "right" time... There cold be a series of other unobserved constraints such as an election, a rally, or a mass shooting abroad, which would influence the resut of this plot so its' result must be taken with a grain of salt. 
-Nethertheless, we often notice that there is a small spike in emotions following a shooting event. This is most notable for aggression, sadness and anger.
+The plots have a lot of noise and there is no way of accounting for other shooting events that may have occured within that timeframe. Some seemingly "small" shootings can have big repercussions in the media if they are filmed, or happen at the "right" time... There could be a series of other unobserved constraints such as an election, a rally, or a mass shooting abroad, which would influence the resut of this plot so its' results must be taken with a grain of salt. 
+Nevertheless, we often notice that there is a small spike in emotions following a shooting event. This is most notable for aggression, sadness and anger.
 
 A small note, the event on the 12th of June 2016 generates an odd plot, this is not a coding error, we genuinely have not identified any quotes relating to gun violence on the five days prior to this event. It seems to be part of the numerous "blanks" that appear in 2016. 
 
@@ -85,6 +85,13 @@ Finally, in the aim of understanding the opinions of significant public figures,
 
 ![emotion_extraction](/images/emotions_big_speakers.png)
 
+We firstly note that there is a lot of noise, high variance, and long "blank" periods as individual speakers are not quoted everyday with respect to gun violence. We can nonetheless extract some information from these graphs.
+Barack Obama is often sad when talking about gun violence. 
+Hillary Clinton is aggressively active on the gun violence topic prior to the 2016 election, but suddenly falls silent following her loss. Perhaps she was using this highly politiced topic as a tool to gain following among the community that supports wider gun control?
+David Hogg appears from nowhere in 2018 following the Stoneman Douglas High School shooting in which he was a victim, and we notice he talks about gun violence with a lot of aggression and fear.
+Richard Blumenthal and Chris Murphy are two members of the US Senate, who are in favour of gun control. They seem to regularly talk about the subject, and do so expressing a lot of aggression and fear. 
+Alan Gottlieb, a conservative political activist and gun rights advocate also regularly talks about gun violence. He seems to do so expresing regular suffering, fear, agression, but also optimism ... This last emotion is not displayed as often be speakers who would favour gun control.
+Bernie Sanders seems to talk about gun violence almost exclusively in the lead up to the 2016 and 2020 elections. Perhaps a political tool?
 
 
 *The following was on our milestone 2, not sure what to do about it*
