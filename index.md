@@ -56,7 +56,8 @@ In general we observe that peaks in deaths from shootings events are correlated 
 #### Sentiment analysis - which quotes are on the dark side...
 
 ##### Vader vs Bert
-![Vader](/images/vader.png) ![Bert](/images/bert.png)
+<img src="/images/vader.png" alt="alt text" width="250" height="250"> <img src="/images/bert.png" alt="alt text" width="250" height="250">
+
 *add method used and maybe fonctionment?* Add graphs of scores, etc...
 
 ##### Bert
