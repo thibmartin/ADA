@@ -49,7 +49,7 @@ After treating the dataset, we wished to identify relevant subtopics. To do so, 
 #### Timewise comparison
 The next step was to compare the time occurences of peak in quotations number to the events timeline in order to get a first intuition on the potential correlation. On the next graph you can observe the number of quotes related to gun events on the same timeline as the number of deaths in gun shootings event. The idea behind this comparaison is that events involving high number of deaths would have more impact on the number of quotations.
 
-![image_title](/images/timeline_basic.png)
+![timelines](/images/timeline_basic.png)
 
 In general we observe that peaks in deaths from shootings events are correlated with an increase in the number of quotes related to gun violence. In short, people talk about gun violence more when there are a lot of shooting events.
 
@@ -86,11 +86,17 @@ Finally, in the aim of understanding the opinions of significant public figures,
 ![emotion_extraction](/images/emotions_big_speakers.png)
 
 We firstly note that there is a lot of noise, high variance, and long "blank" periods as individual speakers are not quoted everyday with respect to gun violence. We can nonetheless extract some information from these graphs.
+
 Barack Obama is often sad when talking about gun violence. 
+
 Hillary Clinton is aggressively active on the gun violence topic prior to the 2016 election, but suddenly falls silent following her loss. Perhaps she was using this highly politiced topic as a tool to gain following among the community that supports wider gun control?
+
 David Hogg appears from nowhere in 2018 following the Stoneman Douglas High School shooting in which he was a victim, and we notice he talks about gun violence with a lot of aggression and fear.
+
 Richard Blumenthal and Chris Murphy are two members of the US Senate, who are in favour of gun control. They seem to regularly talk about the subject, and do so expressing a lot of aggression and fear. 
+
 Alan Gottlieb, a conservative political activist and gun rights advocate also regularly talks about gun violence. He seems to do so expresing regular suffering, fear, agression, but also optimism ... This last emotion is not displayed as often be speakers who would favour gun control.
+
 Bernie Sanders seems to talk about gun violence almost exclusively in the lead up to the 2016 and 2020 elections. Perhaps a political tool?
 
 
