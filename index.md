@@ -56,16 +56,18 @@ In general we observe that peaks in deaths from shootings events are correlated 
 #### Sentiment analysis - which quotes are on the dark side...
 
 ##### Vader vs Bert
-<img src="/images/vader.png"  width=25% height=25%> <img src="/images/bert.png">
+<img src="https://github.com/thibmartin/Datashot/tree/main/images/vader.png" width='250' height='250'> \ 
+<img src="https://github.com/thibmartin/Datashot/tree/main/images/bert.png" width='250' height='250'>
 
 *add method used and maybe fonctionment?* Add graphs of scores, etc...
 #### Emotion extraction 
-Fearing that sentiment score might be too restrictive, we chose to take our analysis further than a simple positive/negative split and investigate the main emotions that came up within quotes. We turned to the empath library and chose a range of emotions from the standard categories. These were: anger, agression,  joy, pride, nervousness, suffering, fear, neglect, deception, disgust, optimism, sadness and disappointment. 
+Fearing that sentiment score might be too restrictive, we chose to take our analysis further than a simple positive/negative split and investigate the main emotions that came up within quotes. We turned to the empath library and chose a range of emotions from the standard categories. These were: anger, aggression,  joy, pride, nervousness, suffering, fear, neglect, deception, disgust, optimism, sadness and disappointment. 
 We first ran lexicon.analyse() function on all quotes related to gun violence and plotted emotions that yielded significant results. This is shown below:
 
 Insert plot here
 
-Agression is what appears the most. This is either because people speak agressively about gun violence or because our chosen theme is inherently violent and matches with a lot of keywords that might be considered as "aggressive". 
+Aggression is what appears the most. This is either because people speak agressively about gun violence or because our chosen theme is inherently violent and matches with a lot of keywords that might be considered as "aggressive". Furthermore, we notice a slight increasing trend in agression over the entire dataset. 
+
 
 
 
